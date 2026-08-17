@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Avoid Errors in AI Schema Generation Process</title>
+<meta name="title" content="Avoid Errors in AI Schema Generation Process">
+<meta name="dc.title" content="Avoid Errors in AI Schema Generation Process">
+<meta name="description" content="">
+<meta name="keywords" content="Avoid Errors in AI Schema Generation Process">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="canonical" href="avoid-errors-in-ai-schema-generation-process.html">
+ 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/" alt="Avoid Errors in AI Schema Generation Process" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+ 	.y765aabf2357ae14b7e3969dd8333294b .f280fd8e074a520547b3591071b365d9a{
+background:#e6efeb!important;
+}
+a:hover{
+color:#ffffff;background:#4caf50!important;
+}
+.y1d4997617ab73850b213bf9c150dc22d i{
+border-radius: 50%;
+width: 36.9px;
+line-height: 35px;
+text-align: center;
+height: 36.8px;
+}
+.df3abd762121be4b9d01def17007de91a{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.y1d4997617ab73850b213bf9c150dc22d i:hover{
+background: white;
+color: #ffffff;!important;
+line-height: 35px;
+border-radius: 50%;
+width: 36.7px;
+text-align: center;
+height: 37.3px;
+}
+.btn-md{
+padding: 14.5px 29.7px;
+border-radius: 0;
+}
+.edd2b0200eda3127132ed5c67218b85c4 *{
+color:#000000;
+}
+.b4f646ca237f4534e64ffc2c57ec6237c{
+font-size: 13.7px;
+}
+.u6e0d1797f835f3ced3096b1fe2e7b225{
+background:#fffffe;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card{
+position: relative;
+z-index: 1;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+margin-bottom: 1.5rem;
+}
+.z0351bb1bd8eb97aa909f58e60293fbc7{
+font-size: 20.2px;
+font-weight: bold;
+}
+.ud0bf17b5c6145c8ebb18827fa637dcb5{
+background:#fffffe!important ;
+}
+.xbd2917f76fdfb7804c15e1b53d64b51f{
+position: relative;
+z-index: 1;
+}
+.y765aabf2357ae14b7e3969dd8333294b .row-item.ud0bf17b5c6145c8ebb18827fa637dcb5{
+background: #bfdce2;
+}
+.v7c02b6c3d454970799465e94f0b0dbba{
+font-size: 2rem !important;
+}
+html{
+scroll-behavior: smooth;
+}
+.y765aabf2357ae14b7e3969dd8333294b .row-item{
+padding: 3rem;
+padding-top: 3.7rem;
+height: 100%;
+}
+.y765aabf2357ae14b7e3969dd8333294b .card-img{
+margin-bottom: 1.7rem;
+text-align: left;
+}
+.y765aabf2357ae14b7e3969dd8333294b .row-item.f280fd8e074a520547b3591071b365d9a{
+background: #f8e5e3;
+}
+.x09b75c8b82d984df170fcf08119d51dc{
+background:#fffffe;
+color:#080808;
+}
+.y765aabf2357ae14b7e3969dd8333294b .v3213065e207a6478ed02e973ffe75d10{
+background:#f9ebdc!important;
+}
+.y395a35a0c67d0c2229be95a025153b76:hover,.c7d349689274051236bff53210f30816e:hover{
+background-size: 100% 100% !important;
+background: #4caf50!important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.y765aabf2357ae14b7e3969dd8333294b p,.{special_content1_class} a,.y765aabf2357ae14b7e3969dd8333294b label{
+font-size:18px!important;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.ydf17b63d32e4d4890006fac7ed178f7d{
+color: #404040;
+}
+.eb3cf247fdbb54523859406c0dce75e00{
+position: relative;
+min-height: 600px;
+}
+.yaae10fff2c7ad213620a210f16c07519:hover{
+box-shadow: 0 49.8px 50px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.navbar{
+background: black;padding-top:3px;padding-bottom:3px;position:fixed;top:0;width:100%;z-index:10000
+}
+a{
+text-decoration: none;
+}
+.x09b75c8b82d984df170fcf08119d51dc p,.x09b75c8b82d984df170fcf08119d51dc a,.x09b75c8b82d984df170fcf08119d51dc span,.x09b75c8b82d984df170fcf08119d51dc label{
+font-size:19px!important;
+}
+.w5f4a5aaac9a448dcbf7240e44740f89b{
+color: #9c9c9c;
+font-size: 20px;
+margin-bottom: 20.7px;
+}
+footer *{
+font-size:19px !important;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-header .collapsed{
+color: #141764;
+}
+*{
+font-family: 'Inconsolata', sans-serif;
+}
+.nav-link{
+color: #ffffff;
+
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+color:white;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.y765aabf2357ae14b7e3969dd8333294b .f280fd8e074a520547b3591071b365d9a *{
+color:#000000;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-header .collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.y765aabf2357ae14b7e3969dd8333294b .ud0bf17b5c6145c8ebb18827fa637dcb5{
+background:#f0e0e0!important;
+}
+.f0d68334162efd45d34437d04edcbab81{
+font-size:48px!important;
+}
+iframe{
+border: none!important;
+}
+.x5a15361df4ade884ea7d7aadec4e86ba{
+font-size:19px!important;
+color: #616161;
+}
+.u6e0d1797f835f3ced3096b1fe2e7b225 p,.u6e0d1797f835f3ced3096b1fe2e7b225 span,.u6e0d1797f835f3ced3096b1fe2e7b225 label{
+font-size:19px!important;
+}
+.w7f67273b85042aa0c46465f50a21de8d{
+position: relative;
+z-index: 1;
+}
+.w580b10cac53841c5e8c415575c0ecfcf{
+font-size: 48px!important;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-header span{
+font-size: 1.5rem;
+}
+.y765aabf2357ae14b7e3969dd8333294b h4{
+font-size:20px!important;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-body{
+padding: 1.75rem 2rem;
+background:#fffffe;
+}
+.v1cd81d756572a926031c47e5a7b9afb0{
+text-decoration: underline!important;color:#4db051!important
+}
+.w7f67273b85042aa0c46465f50a21de8d .card:last-child{
+margin-bottom: 0;
+}
+.y765aabf2357ae14b7e3969dd8333294b .row-item.v3213065e207a6478ed02e973ffe75d10{
+background: #d3d0d0;
+}
+.x5886a97c604189ba30b36fa775ff1b8f{
+max-height: 300px;
+overflow-y: auto;
+}
+.w7f67273b85042aa0c46465f50a21de8d .card .card-header{
+cursor: pointer;
+padding: 1.75rem 2rem;  
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.x09b75c8b82d984df170fcf08119d51dc a,.u6e0d1797f835f3ced3096b1fe2e7b225 a{
+color:#080808!important;
+text-decoration: underline !important;
+}
+footer{
+background:#eaeaea;
+color:#131313;
+}
+.bdd3e76046ed2f6381f2207ed4f9a81b4 *{
+color: white !important;
+}
+body{
+color: #252525;background-color:#fffffe!important
+}
+.yaae10fff2c7ad213620a210f16c07519{
+transition: all 0.3s; 
+}
+.navbar a{
+font-size: 14.5px!important;text-decoration: none;text-transform:uppercase;
+font-weight: bold;
+}
+.y765aabf2357ae14b7e3969dd8333294b .edd2b0200eda3127132ed5c67218b85c4 *{
+color:#000000;
+}
+.c7d349689274051236bff53210f30816e{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffd365 0%, #ffd264 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.bdd3e76046ed2f6381f2207ed4f9a81b4{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+footer a{
+color:#131313;
+text-decoration: underline;
+}
+.nav-item{
+padding-left:8.1px;
+padding-right:7.9px;
+padding-top:4.9px;
+padding-bottom:5.5px;
+}
+.y765aabf2357ae14b7e3969dd8333294b .ud0bf17b5c6145c8ebb18827fa637dcb5 *{
+color:#000000;
+}
+.y765aabf2357ae14b7e3969dd8333294b .edd2b0200eda3127132ed5c67218b85c4{
+background:#e6edf5!important ;
+}
+.y765aabf2357ae14b7e3969dd8333294b .d5ece619dc76cd74cec4179b3418d1f45{
+margin-bottom: 1.5rem;
+}
+.u6e0d1797f835f3ced3096b1fe2e7b225 a{
+font-size:19px;
+}
+.y765aabf2357ae14b7e3969dd8333294b .row-item.edd2b0200eda3127132ed5c67218b85c4{
+background: #f1efeb;
+}
+.f08b4906c3c37caf5676e858d08211bc8{
+background-color: #131313;
+font-size: 29.7px;
+height: 55.6px;
+min-width: 56.5px;
+padding: 0.7rem;
+padding-top: 12.9px;
+color: #fff !important;
+border: 1px solid #111111;
+border-radius: 50%;
+}
+.y765aabf2357ae14b7e3969dd8333294b .v3213065e207a6478ed02e973ffe75d10 *{
+color:#000000;
+}
+ </style>
+<style type="text/css"> 
+   .parallax-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+
+.parallax-content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:20px 40px;
+    margin: 50px auto; /* Creates space for parallax effect */
+    max-width: 80%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (max-width:1000px) {
+.eb3cf247fdbb54523859406c0dce75e00 img{
+position: initial!important;
+}
+.eb3cf247fdbb54523859406c0dce75e00 {
+	min-height: auto;
+}
+.f0d68334162efd45d34437d04edcbab81 {
+font-size: 20px;
+}
+.w5f4a5aaac9a448dcbf7240e44740f89b {
+font-size: 15px !important;
+}
+.xa4c1f41397ce435565f49ed28f5155d3{
+padding-bottom: 0px !important;
+}
+} 
+.content-image-below {
+    margin: 20px 0;
+    text-align: center;
+}
+.image-align-left ol,.image-align-left ul{
+  margin-left: 51%;
+}
+ 
+/* For background image */
+.content-with-bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
+}
+
+.content-over-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+.content-image-below img,.content-with-side-images img,{
+	max-height: 500px!important;
+
+}
+ 
+ 
+
+/* Text container */
+.text-container {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 1rem;
+}
+ 
+
+ /* Main content container */
+.content-with-side-images {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Headers should always be full width */
+.content-with-side-images h4 {
+    width: 100%;
+    clear: both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Regular paragraphs should be full width by default */
+.content-with-side-images p {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Image-text pair container */
+.image-text-pair {
+    width: 100%;
+    margin:  0px 0;
+   
+}
+
+/* Image container - floated */
+.image-container {
+    width: 50%;
+    
+    box-sizing: border-box;
+ 
+}
+.image-container img:hover{
+
+box-shadow: 0 49.6px 50.3px -25px rgb(0 0 0 / 30%);
+    transform: rotate(-2deg) scale(1.03);
+}
+.image-container img{
+transition: all 0.3s;
+}
+
+/* Left-aligned image */
+.image-align-left .image-container {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+    padding-right: 40px;
+}
+
+/* Right-aligned image */
+.image-align-right .image-container {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+
+    padding-left: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ 
+
+/* Clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        float: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0;
+    }
+    
+    .text-flow {
+        display: block;
+    }
+} 
+  
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0px;
+    left: 100%;
+    margin-top: -16px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+  
+}
+
+/* Smart positioning for right-edge dropdowns */
+.dropdown-menu-right .dropdown-submenu>.dropdown-menu,
+.nav-item:last-child .dropdown-submenu>.dropdown-menu,
+.nav-item:nth-last-child(2) .dropdown-submenu>.dropdown-menu {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: -1px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+/* For left-positioned dropdowns, reverse the arrow */
+.dropdown-menu-right .dropdown-submenu>a:after,
+.nav-item:last-child .dropdown-submenu>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu>a:after {
+    float: left;
+    border-width: 5px 5px 5px 0;
+    border-left-color: transparent;
+    border-right-color: #ccc;
+    margin-left: -10px;
+    margin-right: 0;
+}
+
+.dropdown-menu-right .dropdown-submenu:hover>a:after,
+.nav-item:last-child .dropdown-submenu:hover>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu:hover>a:after {
+    border-right-color: #fff;
+    border-left-color: transparent;
+}
+ 
+
+.multi-column-dropdown .dropdown-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .multi-column-dropdown {
+      
+        width: 100%;
+    }
+    
+    .dropdown-submenu>.dropdown-menu {
+        position: static;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
+.accordion .card{
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.accordion .card-header{
+background: white;
+}
+.accordion h4{
+	font-size: 1.3rem;
+}
+/* Use hover only where it exists */
+@media (hover:hover) {
+  .dropdown-submenu:hover > .dropdown-menu { display:block; }
+}
+
+/* Nested dropdowns should show when .show is present (Bootstrap only sets this for top-level) */
+.dropdown-menu .dropdown-menu { display:none; }
+.dropdown-menu .dropdown-menu.show { display:block; }
+
+/* Mobile layout: stack submenus and remove weird offsets */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    position: static;          /* keeps the menu within the flow so it won't render off-screen */
+    float: none;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    margin-left: 0;
+    max-height: 60vh;          /* scroll if long */
+    overflow-y: auto;
+  }
+}
+a{
+	color: black;
+	text-decoration: underline;
+}
+.tag,h3,h2 {
+ 	background-color: #000;
+ 	color: #fff!important; 
+ 	padding-left: 8px;
+ 	padding-right: 8px;
+ 	text-align: center;
+ width: fit-content;
+display: inline-block;
+
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
+ }
+
+</style>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "LocalBusiness","name": "qwe",
+"url": "",
+"telephone":"we",
+"address": {
+"@type": "PostalAddress", 
+"streetAddress": "e", 
+"addressLocality": "e", 
+"addressRegion": "we" , 
+"postalCode": "e" 
+} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"url": "avoid-errors-in-ai-schema-generation-process.html","name": "","description": "",
+"disambiguatingDescription": ""},
+"accessibilitySummary": ""},
+"keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"educationalUse": [""],
+"text": [""],
+"workExample": {
+"about": {"url": "avoid-errors-in-ai-schema-generation-process.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "avoid-errors-in-ai-schema-generation-process.html"}
+},
+"hasPart":[
+]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Avoid Errors in AI Schema Generation Process",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.1","ratingCount": "259",
+"reviewCount": "445"
+}
+}
+</script> 
+</head>
+
+<body><nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="index.html"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="w-100 navbar-nav justify-content-around align-items-center d-flex"><li class="nav-item"><a class="y395a35a0c67d0c2229be95a025153b76 nav-link" href="news.html" rel="nofollow" >News</a></li>
+        
+            <!-- Show all double menus if within limit -->
+                                <li class="dropdown-hover dropdown nav-item">
+                <a class="nav-link y395a35a0c67d0c2229be95a025153b76 dropdown-toggle" href="javascript:;" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-expanded="false">
+                    AI-Powered Schema Generation                </a>
+                <div class="dropdown-menu-right   dropdown-menu" aria-labelledby="navbarDropdown0">
+                                                                    <a class="dropdown-item" href="index.html" >
+                            Avoid Common Pitfalls in JSON-LD Schema Design                        </a>
+                                                                    <a class="dropdown-item" href="avoid-errors-in-ai-schema-generation-process.html" >
+                            Avoid Errors in AI Schema Generation Process                        </a>
+                                    </div>
+            </li>
+            
+    <li class="nav-item"><a class="y395a35a0c67d0c2229be95a025153b76 nav-link" rel=nofollow href="about-us.html">About Us</a>
+</li></ul>
+</div>
+</nav>
+   
+<div class="mt-5 container-fluid xa4c1f41397ce435565f49ed28f5155d3 eb3cf247fdbb54523859406c0dce75e00">
+<img  src="img/avoid-errors-in-ai-s.jpg" width="100%" class="df3abd762121be4b9d01def17007de91a" alt="Avoid Errors in AI Schema Generation Process" title="Avoid Errors in AI Schema Generation Process qwe">
+</div><div class="  mt-5 container-fluid u6e0d1797f835f3ced3096b1fe2e7b225"><div class="  row h-100">
+<div class="container">
+<div class="row ">
+<div class="col-lg-12  text-center pt-5" id="">
+<h1 class="text-dark f0d68334162efd45d34437d04edcbab81 mb-0">Avoid Errors in AI Schema Generation Process</h1></div>
+<div class="col-lg-12  py-5 m-auto">
+<div class="x5a15361df4ade884ea7d7aadec4e86ba " style=" ">
+<p>qweqweqweqweqe</p><p><a class="y395a35a0c67d0c2229be95a025153b76 v1cd81d756572a926031c47e5a7b9afb0" href="index.html">Avoid Common Pitfalls in JSON-LD Schema Design</a></p>
+<p><a class="v1cd81d756572a926031c47e5a7b9afb0" href="index.html">Avoid Common Pitfalls in JSON-LD Schema Design</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><footer>
+<div class="pt-5 py-4 container" >
+<div class="row"><div class="col-lg-3">
+<p>qwe</p>
+<p>Phone : we</p>
+<p>Email : e</p>
+<p>City : e</p>
+<p>State : we</p>
+<p>Zip : e</p>
+<p>Address : e</p>
+<p>Company Website : <a class="y395a35a0c67d0c2229be95a025153b76" href="we" rel="nofollow">we</a></p>
+</div><div class="col-lg-3"><p><a class="y395a35a0c67d0c2229be95a025153b76" href="sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="y395a35a0c67d0c2229be95a025153b76" href="privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+<p><a class="y395a35a0c67d0c2229be95a025153b76" href="about-us.html" rel="nofollow">About Us</a></p>
+</p>
+</div></div>
+</div>
+</footer>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+ <script>
+(function() {
+  // Works with both BS4 (data-toggle events) and BS5
+  var $ = window.jQuery;
+
+  // Toggle nested submenu on click/tap
+  $(document).on('click', '.dropdown-submenu > a', function(e) {
+    var $toggle = $(this);
+    var $submenu = $toggle.next('.dropdown-menu');
+
+    // If there isn't a submenu, behave like a normal link
+    if (!$submenu.length) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Close sibling submenus at the same level
+    $toggle.parent('.dropdown-submenu')
+      .siblings('.dropdown-submenu')
+      .find('>.dropdown-menu.show')
+      .removeClass('show');
+
+    // Toggle this submenu
+    $submenu.toggleClass('show');
+
+    // Keep parent dropdown open
+    $toggle.closest('.dropdown-menu').addClass('show');
+
+    // Accessibility state
+    $toggle.attr('aria-expanded', $submenu.hasClass('show') ? 'true' : 'false');
+  });
+
+  // When the top-level dropdown closes, close all nested submenus
+  $(document).on('hidden.bs.dropdown', '.dropdown', function() {
+    $(this).find('.dropdown-menu.show').removeClass('show');
+  });
+})();
+</script>
+</body>
+</html>
