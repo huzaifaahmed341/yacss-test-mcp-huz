@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>News</title>
+<meta name="title" content="News">
+<meta name="DC.title" lang="en" content="New">
+<meta name="description" content="">
+<meta name="keywords" content="Avoid Common Pitfalls in JSON-LD Schema Design">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="shortcut icon"  href="../img/"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+<style type="text/css">
+  .y602da05f8a0568a6e5b7768f6c4d9742 *{
+color:#000000;
+}
+.we91c87809ce36b820dd52e48c390030f{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffce60 0%, #ffcd5f 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .row-item.y602da05f8a0568a6e5b7768f6c4d9742{
+background: #efede9;
+}
+.zd960304f5283b740a0920b34711467d2 > a > .b59de89f59db95d9d4ee7c77ff18b9ece{
+font-weight: 400;
+margin-bottom: 0.625rem;
+line-height:1.7;
+font-size:15.2px;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .row-item.y0482c33930516f6425d71646eb03a38f{
+background: #ceebf1;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .y0482c33930516f6425d71646eb03a38f *{
+color:#000000;
+}
+.justify-content-evenly{
+justify-content: space-evenly;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-body{
+padding: 1.75rem 2rem;
+background:#fffdfa;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 h4{
+font-size:20px!important;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+color:white;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+footer *{
+font-size:19px !important;
+}
+.zd960304f5283b740a0920b34711467d2:hover{
+box-shadow: 0 20px 40px -5px rgba(9,30,66,.3);
+border-radius: 5px;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .f66e11ada018cf1446b3864af23e6f0e2 *{
+color:#000000;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .y602da05f8a0568a6e5b7768f6c4d9742 *{
+color:#000000;
+}
+.dba75d8542bb7df1dbbc68b1735caaeb8{
+color: #fff;
+background-color: #068ba7;
+border-color: #1499b5;
+display: inline-block;
+font-weight: 800;
+line-height: 1.5;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+padding: 1rem 1.75rem;
+font-size: 0.875rem;
+border-radius: 0;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+*{
+font-family: 'Inconsolata', sans-serif;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-header .collapsed{
+color: #0f125f;
+}
+.z86160d45da954ff87638dfcff0845bb2{
+max-height: 300px;
+overflow-y: auto;
+}
+.x63015bc784bd5c05a1c3dca933bdbdb1:hover,.we91c87809ce36b820dd52e48c390030f:hover{
+background-size: 100% 100% !important;
+background: #4caf50!important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+footer a{
+color:#111111;
+text-decoration: underline;
+}
+body{
+color: #2e2e2e;background-color:#fffdfa!important
+}
+.wf496a7f103e9335bb06a2c75e459531f{
+font-size:48px!important;
+}
+.xbe9f0f538163a2a20fe7468c9eebcae0 p,.xbe9f0f538163a2a20fe7468c9eebcae0 span,.xbe9f0f538163a2a20fe7468c9eebcae0 label{
+font-size:19px!important;
+}
+.b01506ad4dc0b102ded7466debd007d3d i:hover{
+background: white;
+color: #ffffff;!important;
+line-height: 35px;
+border-radius: 50%;
+width: 36.6px;
+text-align: center;
+height: 36.6px;
+}
+.zd960304f5283b740a0920b34711467d2 > .f7137e098021ddadeaf27e48afa41363b > a{
+text-decoration: none;
+}
+.zbbbfffb7db48cf9b77cac9396f9f65ca{
+font-size: 2rem !important;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card{
+position: relative;
+z-index: 1;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+margin-bottom: 1.5rem;
+}
+.c8c085365c80e518de137a0d26fbdcf71:hover{
+box-shadow: 0 50.5px 49.6px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card:last-child{
+margin-bottom: 0;
+}
+.eff5c069b7f31305c52a8b476eb78deb0{
+background-color: #040404;
+font-size: 29.8px;
+height: 56.4px;
+min-width: 56.3px;
+padding: 0.7rem;
+padding-top: 13.1px;
+color: #fff !important;
+border: 1px solid #0a0a0a;
+border-radius: 50%;
+}
+.zd960304f5283b740a0920b34711467d2 > a{
+color:#000000;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.bfed0b312a6715b7de6d88cf6cc6d3332{
+font-size:19px!important;
+color: #6f6f6f;
+}
+a:hover{
+color:#ffffff;background:#4caf50!important
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .e225a0dbe70ffd0d2e723414c363dc2b6{
+margin-bottom: 1.5rem;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .y0482c33930516f6425d71646eb03a38f{
+background:#f0e0e0!important;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .e4d7f2dd961fa3a3d475920a999c00960{
+background:#e6efeb!important;
+}
+.x2cb5c633fe8776de1757b7786c198038{
+font-size: 19.9px;
+font-weight: bold;
+}
+html{
+scroll-behavior: smooth;
+}
+.u295d71dbb5065df79715cdf1a232cc6a a,.xbe9f0f538163a2a20fe7468c9eebcae0 a{
+color:#121212!important;
+text-decoration: underline !important;
+}
+.btn-md{
+padding: 15.4px 29.5px;
+border-radius: 0;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .y602da05f8a0568a6e5b7768f6c4d9742{
+background:#e6edf5!important ;
+}
+.bdc0dd796c5bca0d0b8461afc7798e215 *{
+color: white !important;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .f66e11ada018cf1446b3864af23e6f0e2{
+background:#f9ebdc!important;
+}
+.e7b1569a5f13a7c92d621ad654d0e53f1{
+color: #4f4f4f;
+}
+a{
+text-decoration: none;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .e4d7f2dd961fa3a3d475920a999c00960 *{
+color:#000000;
+}
+.bc05cb6f1a1a9b138f8a2d03fc412ee9f{
+position: relative;
+min-height: 600px;
+}
+.post-content *{
+
+font-size: 1.25rem;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 p,.{special_content1_class} a,.t54915c5df151b6eb8f881ad0cc6b3796 label{
+font-size:18px!important;
+}
+.zd960304f5283b740a0920b34711467d2 > a > .b690bf3a84c5f2642c1f4031fcbb6ad67{
+font-size: 22.4px;
+margin-top: 1.875rem;
+margin-bottom: 0.625rem;
+}
+.zd960304f5283b740a0920b34711467d2 > a:focus, .zd960304f5283b740a0920b34711467d2 > a:hover{
+text-decoration: none;
+color: #078ca8;
+}
+.f7137e098021ddadeaf27e48afa41363b{
+font-size:15.4px!important;
+font-style: italic;
+margin-top: 0;
+font-style: normal;
+color: #515151;
+}
+.xbe9f0f538163a2a20fe7468c9eebcae0{
+background:#fffdfa;
+}
+.b01506ad4dc0b102ded7466debd007d3d i{
+border-radius: 50%;
+width: 37.4px;
+line-height: 35px;
+text-align: center;
+height: 36.8px;
+}
+.navbar{
+background: black;padding-top:3px;padding-bottom:3px;position:fixed;top:0;width:100%;z-index:10000
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .row-item{
+padding: 3rem;
+padding-top: 3.7rem;
+height: 100%;
+}
+.zd960304f5283b740a0920b34711467d2{
+padding: 20px;
+background: #f8f5f2;
+margin-bottom: 30px;
+position: relative;
+border-radius: 2px;
+border-top: solid;
+box-shadow: 0 1px 1px 0 rgba(53, 19, 109, 0.15);
+margin-bottom: 30px;
+transition: all 400ms;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .row-item.e4d7f2dd961fa3a3d475920a999c00960{
+background: #fdeae8;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .row-item.f66e11ada018cf1446b3864af23e6f0e2{
+background: #d2cfcf;
+}
+footer{
+background:#e9e9e9;
+color:#111111;
+}
+.feb23767fec388fde45f2c4a70ac7468c{
+font-size: 14.4px;
+}
+.w43224806e91b2436d138d84f0f0ce982{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.nav-item{
+padding-left:8px;
+padding-right:8.4px;
+padding-top:5.1px;
+padding-bottom:5.1px;
+}
+.vaa01ffe7386f89ec2204dfc48d040fdf{
+color: #a3a3a3;
+font-size: 19.9px;
+margin-bottom: 21px;
+}
+.xbe9f0f538163a2a20fe7468c9eebcae0 a{
+font-size:19px;
+}
+.bdc0dd796c5bca0d0b8461afc7798e215{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-header span{
+font-size: 1.5rem;
+}
+.u295d71dbb5065df79715cdf1a232cc6a{
+background:#fffdfa;
+color:#121212;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-header{
+cursor: pointer;
+padding: 1.75rem 2rem;  
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.t54915c5df151b6eb8f881ad0cc6b3796 .card-img{
+margin-bottom: 1.7rem;
+text-align: left;
+}
+.b67d8d2041cf01f864d8725fd5b754186{
+position: relative;
+z-index: 1;
+}
+.nav-link{
+color: #ffffff;
+
+}
+.f7137e098021ddadeaf27e48afa41363b a{
+color: black;
+}
+.c8c085365c80e518de137a0d26fbdcf71{
+transition: all 0.3s; 
+}
+.b5df41747753c71b91aa9bfdaa3bb529d{
+font-size: 48px!important;
+}
+.u295d71dbb5065df79715cdf1a232cc6a p,.u295d71dbb5065df79715cdf1a232cc6a a,.u295d71dbb5065df79715cdf1a232cc6a span,.u295d71dbb5065df79715cdf1a232cc6a label{
+font-size:19px!important;
+}
+.y6763fc32df1f8e462d884d62cd1dbee9 .card .card-header .collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.dd20a31e551350b6c4240c94c7f62f527{
+text-decoration: underline!important;color:#5abd5e!important
+}
+.y6763fc32df1f8e462d884d62cd1dbee9{
+position: relative;
+z-index: 1;
+}
+.navbar a{
+font-size: 15.5px!important;text-decoration: none;text-transform:uppercase;
+font-weight: bold;
+}
+.y0482c33930516f6425d71646eb03a38f{
+background:#fffdfa!important ;
+}
+iframe{
+border: none!important;
+}
+.container{
+max-width:1300px
+}
+ </style>
+<style type="text/css"> 
+   .parallax-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+
+.parallax-content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:20px 40px;
+    margin: 50px auto; /* Creates space for parallax effect */
+    max-width: 80%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (max-width:1000px) {
+.bc05cb6f1a1a9b138f8a2d03fc412ee9f img{
+position: initial!important;
+}
+.bc05cb6f1a1a9b138f8a2d03fc412ee9f {
+  min-height: auto;
+}
+.wf496a7f103e9335bb06a2c75e459531f {
+font-size: 20px;
+}
+.vaa01ffe7386f89ec2204dfc48d040fdf {
+font-size: 15px !important;
+}
+.x61f6e55e0481a6d87b0ab4bb5f82f1b6{
+padding-bottom: 0px !important;
+}
+} 
+.content-image-below {
+    margin: 20px 0;
+    text-align: center;
+}
+.image-align-left ol,.image-align-left ul{
+  margin-left: 51%;
+}
+ 
+/* For background image */
+.content-with-bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
+}
+
+.content-over-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+.content-image-below img,.content-with-side-images img,{
+  max-height: 500px!important;
+
+}
+ 
+ 
+
+/* Text container */
+.text-container {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 1rem;
+}
+ 
+
+ /* Main content container */
+.content-with-side-images {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Headers should always be full width */
+.content-with-side-images h4 {
+    width: 100%;
+    clear: both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Regular paragraphs should be full width by default */
+.content-with-side-images p {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Image-text pair container */
+.image-text-pair {
+    width: 100%;
+    margin:  0px 0;
+   
+}
+
+/* Image container - floated */
+.image-container {
+    width: 50%;
+    
+    box-sizing: border-box;
+ 
+}
+.image-container img:hover{
+
+box-shadow: 0 49.6px 50.3px -25px rgb(0 0 0 / 30%);
+    transform: rotate(-2deg) scale(1.03);
+}
+.image-container img{
+transition: all 0.3s;
+}
+
+/* Left-aligned image */
+.image-align-left .image-container {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+    padding-right: 40px;
+}
+
+/* Right-aligned image */
+.image-align-right .image-container {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+
+    padding-left: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ 
+
+/* Clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        float: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0;
+    }
+    
+    .text-flow {
+        display: block;
+    }
+} 
+  
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0px;
+    left: 100%;
+    margin-top: -16px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+  
+}
+
+/* Smart positioning for right-edge dropdowns */
+.dropdown-menu-right .dropdown-submenu>.dropdown-menu,
+.nav-item:last-child .dropdown-submenu>.dropdown-menu,
+.nav-item:nth-last-child(2) .dropdown-submenu>.dropdown-menu {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: -1px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+/* For left-positioned dropdowns, reverse the arrow */
+.dropdown-menu-right .dropdown-submenu>a:after,
+.nav-item:last-child .dropdown-submenu>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu>a:after {
+    float: left;
+    border-width: 5px 5px 5px 0;
+    border-left-color: transparent;
+    border-right-color: #ccc;
+    margin-left: -10px;
+    margin-right: 0;
+}
+
+.dropdown-menu-right .dropdown-submenu:hover>a:after,
+.nav-item:last-child .dropdown-submenu:hover>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu:hover>a:after {
+    border-right-color: #fff;
+    border-left-color: transparent;
+}
+ 
+
+.multi-column-dropdown .dropdown-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .multi-column-dropdown {
+      
+        width: 100%;
+    }
+    
+    .dropdown-submenu>.dropdown-menu {
+        position: static;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
+.accordion .card{
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.accordion .card-header{
+background: white;
+}
+.accordion h4{
+  font-size: 1.3rem;
+}
+/* Use hover only where it exists */
+@media (hover:hover) {
+  .dropdown-submenu:hover > .dropdown-menu { display:block; }
+}
+
+/* Nested dropdowns should show when .show is present (Bootstrap only sets this for top-level) */
+.dropdown-menu .dropdown-menu { display:none; }
+.dropdown-menu .dropdown-menu.show { display:block; }
+
+/* Mobile layout: stack submenus and remove weird offsets */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    position: static;          /* keeps the menu within the flow so it won't render off-screen */
+    float: none;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    margin-left: 0;
+    max-height: 60vh;          /* scroll if long */
+    overflow-y: auto;
+  }
+}
+a{
+  color: black;
+  text-decoration: underline;
+}
+.tag,h3,h2 {
+  background-color: #000;
+  color: #fff!important; 
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+ width: fit-content;
+
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
+ }
+
+</style>
+</head>
+<body>
+<nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href="../index.html"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="align-items-center w-100 d-flex justify-content-around navbar-nav"><li class="nav-item"><a class="x63015bc784bd5c05a1c3dca933bdbdb1 nav-link" href="../news.html" rel="nofollow" >News</a></li>
+        
+            <!-- Show all double menus if within limit -->
+                                <li class="dropdown-hover nav-item dropdown">
+                <a class="x63015bc784bd5c05a1c3dca933bdbdb1 dropdown-toggle nav-link" href="javascript:;" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-expanded="false">
+                    AI-Powered Schema Generation                </a>
+                <div class="dropdown-menu-right dropdown-menu  " aria-labelledby="navbarDropdown0">
+                                                                    <a class="dropdown-item" href="../index.html" >
+                            Avoid Common Pitfalls in JSON-LD Schema Design                        </a>
+                                                                    <a class="dropdown-item" href="../avoid-errors-in-ai-schema-generation-process.html" >
+                            Avoid Errors in AI Schema Generation Process                        </a>
+                                    </div>
+            </li>
+            
+    <li class="nav-item"><a class="x63015bc784bd5c05a1c3dca933bdbdb1 nav-link" rel=nofollow href="../about-us.html">About Us</a>
+</li></ul>
+</div>
+</nav>
+<div class="container-fluid bg-image pb-5">
+<div class="container pt-5 pb-5">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h1 class="text-white mb-0 "> 
+                     qwe</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="container py-5">
+<div class="row gx-4 gx-lg-5 justify-content-center">
+<div class="col-md-12">
+<div class="zd960304f5283b740a0920b34711467d2">
+                 <h1 class="pt-2 text-capitalize"><b>qwe</b></h1>
+<p class="f7137e098021ddadeaf27e48afa41363b">
+Posted by   on </p>
+</div>
+<div class="py-4">
+<p>qweqwe</p>
+</div>
+<div class="d-flex justify-content-evenly mb-4">
+<a class="btn  text-uppercase" href="qwe.html">Next</a>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="py-4 container pt-5" >
+<div class="row"><div class="col-lg-3">
+<p>qwe</p>
+<p>Phone : we</p>
+<p>Email : e</p>
+<p>City : e</p>
+<p>State : we</p>
+<p>Zip : e</p>
+<p>Address : e</p>
+<p>Company Website : <a class="x63015bc784bd5c05a1c3dca933bdbdb1" href="we" rel="nofollow">we</a></p>
+</div><div class="col-lg-3"><p><a class="x63015bc784bd5c05a1c3dca933bdbdb1" href="../sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="x63015bc784bd5c05a1c3dca933bdbdb1" href="../privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+<p><a class="x63015bc784bd5c05a1c3dca933bdbdb1" href="../about-us.html" rel="nofollow">About Us</a></p>
+</p>
+</div></div>
+</div>
+</footer> 
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script> 
+ <script>
+(function() {
+  // Works with both BS4 (data-toggle events) and BS5
+  var $ = window.jQuery;
+
+  // Toggle nested submenu on click/tap
+  $(document).on('click', '.dropdown-submenu > a', function(e) {
+    var $toggle = $(this);
+    var $submenu = $toggle.next('.dropdown-menu');
+
+    // If there isn't a submenu, behave like a normal link
+    if (!$submenu.length) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Close sibling submenus at the same level
+    $toggle.parent('.dropdown-submenu')
+      .siblings('.dropdown-submenu')
+      .find('>.dropdown-menu.show')
+      .removeClass('show');
+
+    // Toggle this submenu
+    $submenu.toggleClass('show');
+
+    // Keep parent dropdown open
+    $toggle.closest('.dropdown-menu').addClass('show');
+
+    // Accessibility state
+    $toggle.attr('aria-expanded', $submenu.hasClass('show') ? 'true' : 'false');
+  });
+
+  // When the top-level dropdown closes, close all nested submenus
+  $(document).on('hidden.bs.dropdown', '.dropdown', function() {
+    $(this).find('.dropdown-menu.show').removeClass('show');
+  });
+})();
+</script>
+</body>
+</html>
